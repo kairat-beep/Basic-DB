@@ -1,0 +1,26 @@
+Usage: db_ids [command] [table] [ARGS]
+
+A command-line tool to interact with the database.
+
+Options:
+  -h  Show this message and exit.
+
+Commands:
+  create        Create a table       .
+  insert        Insert data into the .
+  delete        Delete data from the .
+  select        Select data from the .
+
+Create:
+  Usage: abc create TABLE_NAME TYPE1,..., TYPEN
+Insert:
+  Usage: abc insert TABLE COLUMN1 COLUMN2 VALUE1 VALUE2
+Delete:
+  Usage: abc delete TABLE CONDITION
+Select:
+  Usage: abc select TABLE COLUMNS CONDITION
+
+Examples:
+  abc insert users name email 'Alice' 'alice@example.com'
+  abc delete users "name = 'Alice'"
+  abc select users name,email "email LIKE '%@example.com%'"
